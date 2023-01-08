@@ -1,0 +1,100 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* basic */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* style */
+
+.header {
+    background-image: url(../images/bg-home/h1-image-01.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.head-info {
+    background-color: rgba(255, 255, 255, 0.17);
+    padding: 15px 53px;
+    color: #fff;
+}
+
+.wel p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wel i {
+    cursor: pointer;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+.wel i:hover {
+    color: rgb(211, 208, 208);
+}
+
+.info-contact .contact p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.info-contact .contact p a {
+    color: #fff;
+    position: relative;
+}
+
+.info-contact .contact p a::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    width: 0%;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(.17, .67, .83, .67);
+}
+
+.info-contact .contact p a:hover:before {
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+}
